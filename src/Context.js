@@ -25,7 +25,7 @@ const createChat = async () => {
   };
 
   try {
-    await axios.post("http://localhost:5000/chat/send", newMessage);
+    await axios.post("https://notebackend-7heh.onrender.com/chat/send", newMessage);
 
     setChatData(prev => [...prev, newMessage]);
     setLoadedMessages(prev => [...prev, newMessage]);
